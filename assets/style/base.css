@@ -10,8 +10,8 @@
   }
   body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #505562;
     color: #fff;
+    background-color: #505562;
   }
   
   .nav {
@@ -31,6 +31,12 @@
       font-size: 18px;
       font-weight: bold
   }
+
+  @media screen and (max-width: 800px) {
+    .nav .left h4 {
+        font-size: 1rem;
+      }
+}
   
   .nav .left * {
       margin: 0 .2rem;

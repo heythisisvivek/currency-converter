@@ -16,6 +16,15 @@
     box-shadow: 0 0 .6rem #222;
 }
 
+@media screen and (max-width: 800px) {
+    .news-card {
+        flex-direction: column;
+    }
+    .news-card * {
+        margin: .2rem 0;
+    }
+}
+
 .news-card:hover {
     cursor: pointer;
     background: #777c88;

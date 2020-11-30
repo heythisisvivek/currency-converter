@@ -22,6 +22,20 @@
   </div>
   <div class="afterload">
     <%- include("navigation") %>
+    <div class="notification">
+        <div style="width: 20%; border-right: 2px solid #FFF; text-align: center; font-weight: bold">
+          Latest Currency Rate
+        </div>
+        <marquee direction='left' behavior="scroll" loop='-1' style="width: 80%">
+           <ul>
+             <li>India (INR) <span class="currency-inr">4545</span>&#8377;</li>
+             <li>United States Dollar (USD) <span class="currency-usd">4545</span>&#36;</li>
+             <li>British Pound Sterling (GBP) <span class="currency-gbp">4545</span>&pound;</li>
+             <li>Euro (EUR) <span class="currency-eur">4545</span>&euro;</li>
+             <li>Japan (JPY) <span class="currency-jpy">4545</span>&yen;</li>
+           </ul>
+       </marquee>
+    </div>
     <div class="container">
         <div class="header">
           <h1>Currency Converter</h1>
@@ -32,5 +46,21 @@
         <ul class="add-currency-list"></ul>
       </div>
     </div>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        fetch("https://api.exchangeratesapi.io/latest?base=USD")
+        .then((res) => res.json())
+        .then((data) => {
+          const rates = data["rates"];
+          document.querySelector(".currency-inr").innerHTML = rates["INR"].toFixed(2);
+          document.querySelector(".currency-usd").innerHTML = rates["USD"].toFixed(2);
+          document.querySelector(".currency-gbp").innerHTML = rates["GBP"].toFixed(2);
+          document.querySelector(".currency-eur").innerHTML = rates["EUR"].toFixed(2);
+          document.querySelector(".currency-jpy").innerHTML = rates["JPY"].toFixed(2);
+        }).catch((e) => {
+          console.log(e);
+        })
+      })
+    </script>
 </body>
 </html>

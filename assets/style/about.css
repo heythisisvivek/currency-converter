@@ -1,5 +1,11 @@
 @import url("./base.css");
 
+@media screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+      }
+}
+
 .about {
     text-align: center
 }
