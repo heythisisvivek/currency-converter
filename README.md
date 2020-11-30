@@ -1,6 +1,6 @@
 # Short News
 
-Currency Coverter with latest news all over the world.
+Currency Coverter with latest News all over the world.
 
 ## Installation
 
@@ -12,6 +12,7 @@ cd currency-converter
 node i -y
 npm run dev
 ```
+Then edit .env file and change SMTP, SMTP_EMAIL with username@domain.com and SMTP_PASS with your password to get email when user submit form in contact page.
 
 Screenshots
 ----
