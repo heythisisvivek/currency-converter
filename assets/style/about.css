@@ -1,0 +1,16 @@
+@import url("./base.css");
+
+.about {
+    text-align: center
+}
+
+.about img {
+    padding: 1rem;;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 10px #222);
+}
+
+.about div.content {
+    margin: 1rem 0;
+    text-align: initial;
+}

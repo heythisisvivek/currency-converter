@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #505562;
+    color: #fff;
+  }
+  
+  .nav {
+      display: flex;
+      padding: 1rem;
+      align-items:center;
+      justify-content: space-around;
+      background: #222;
+  }
+  
+  .nav .left {
+      display: flex;
+      align-items:center;
+  }
+  
+  .nav .left h4 {
+      font-size: 18px;
+      font-weight: bold
+  }
+  
+  .nav .left * {
+      margin: 0 .2rem;
+  }
+  
+  .nav ul {
+      display: flex;
+      list-style: none;
+      align-items:center;
+      /* flex-wrap: column; */
+      /* justify-content: center; */
+  }
+  
+  .nav ul li {
+      position: relative;
+  }
+  
+  .nav ul li a {
+      color: #FFF;
+      transition: .6s;
+      padding: .8rem;
+      border-radius: .2rem;
+      text-decoration: none;
+  }
+  
+  .nav ul li a:hover {
+      color: #FFF;
+      background-color: #505562;
+  }
+
+  .container {
+    width: 500px;
+    margin: 20px auto;
+    user-select: none;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .beforeload {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .beforeload .circle {
+      width: 30px;
+      height: 30px;
+      transition: .4s;
+      border-radius: 100%;
+      border-top: 3px solid #4285F4;
+      border-left: 3px solid #DB4437;
+      border-bottom: 3px solid #F4B400;
+      border-right: 3px solid #0F9D58;
+      animation: .6s circlerotate linear infinite;
+  }
+
+  @keyframes circlerotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+  }
+
+  .afterload {
+      display: none;
+  }

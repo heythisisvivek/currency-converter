@@ -1,0 +1,41 @@
+@import url("./base.css");
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group * {
+    margin: .4rem 0;
+}
+
+.form-control {
+    border: 0;
+    outline: 0;
+    opacity: .5;
+    transition: .4s;
+    padding: .6rem;
+    font-size: 1.2rem;
+    border-radius: .2rem;
+}
+
+.form-control:focus {
+    opacity: 1;
+}
+
+.btn {
+    outline: 0;
+    border: 0;
+    width: 100px;
+    transition: .4s;
+    color: #FFF;
+    padding: .6rem;
+    font-size: 1.05rem;
+    background: #222;
+    border-radius: .4rem;
+}
+
+.btn:hover {
+    opacity: .5;
+    cursor: pointer;
+}

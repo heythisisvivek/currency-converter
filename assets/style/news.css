@@ -1,0 +1,27 @@
+@import url("./base.css");
+
+
+.container {
+    width: 70%;
+  }
+
+.news-card {
+    display: flex;
+    transition: .6s;
+    margin: 2rem 0;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #222;
+    box-shadow: 0 0 .6rem #222;
+}
+
+.news-card:hover {
+    cursor: pointer;
+    background: #777c88;
+    box-shadow: 0 0 1rem #222;
+}
+
+.news-card div {
+    padding: 0 1rem;
+}
