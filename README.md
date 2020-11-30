@@ -16,7 +16,7 @@ npm run dev
 Screenshots
 ----
 
-![Screenshot](assets/images/image.png)
+![Screenshot](assets/images/wallpaper.png)
 
 Links
 ----
